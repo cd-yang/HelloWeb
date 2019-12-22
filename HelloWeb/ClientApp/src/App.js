@@ -4,7 +4,7 @@ import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
-import mxGraphGridAreaEditor from './components/MxGraph';
+import mxGraphGridAreaEditor from './components/mxgraph/MxGraph';
 
 import './custom.css'
 
