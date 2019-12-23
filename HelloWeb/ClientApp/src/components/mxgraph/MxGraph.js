@@ -38,6 +38,7 @@ import {
     mxCompactTreeLayout,
     mxCellOverlay
 } from "mxgraph-js";
+
 // xml-< json
 class mxCellAttributeChange {
     // constructor
@@ -665,41 +666,17 @@ class mxGraphGridAreaEditor extends Component {
         return (
             <div>
                 <ul className="sidebar" ref="mxSidebar">
-                    <li className="title" data-title="Task node" data-value="Task node">
-                        Task node
-          </li>
-                    <li
-                        className="task"
-                        data-title="Kafka->HDFS"
-                        data-value="Channel task"
-                    >
-                        rectangle
-          </li>
-                    <li
-                        className="task"
-                        data-title="A/B test task"
-                        data-value="A/B test task"
-                    >
-                        A/Btest task
-          </li>
-                    <li
-                        className="task"
-                        data-title="Hive->Email"
-                        data-value="Report task"
-                    >
-                        Report task
-          </li>
-                    <li className="task" data-title="Hive->Hive" data-value="HSQL task">
-                        HSQL task
-          </li>
-                    <li className="task" data-title="Shell task" data-value="Shell task">
-                        Shell task
-          </li>
+                    <li className="title" data-title="Task node" data-value="Task node">Task node</li>
+                    <li className="task" data-title="Kafka->HDFS" data-value="Channel task">rectangle</li>
+                    <li className="task" data-title="A/B test task" data-value="A/B test task">A/Btest task</li>
+                    <li className="task" data-title="Hive->Email" data-value="Report task" >Report task</li>
+                    <li className="task" data-title="Hive->Hive" data-value="HSQL task">HSQL task</li>
+                    <li className="task" data-title="Shell task" data-value="Shell task">Shell task</li>
                     <li id="layout123">layout</li>
                 </ul>
                 <div className="toolbar" ref="toolbar" />
                 <div className="container-wrapper">
-                    <div className="container" ref="divGraph" />
+                    <div className="mxcontainer" ref="divGraph" />
                 </div>
                 <div className="changeInput" style={{ zIndex: 10 }} />
                 {this.state.createVisile && (
